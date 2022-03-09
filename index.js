@@ -1,5 +1,14 @@
 function init()
 {
-    let body = document.getElementById("body");
-    body.style.background = "black";
+    fetch("profiles/users.csv")
+    .then(function(response)
+    {
+        return response.text;
+    })
+    .then(createProfileObjects)
+}
+
+function createProfileObjects(data)
+{
+    console.log(data);
 }
