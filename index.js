@@ -47,7 +47,7 @@ function render(profiles)
         let profileInsta = document.createElement("A");
 
         profilePic.src = profile["ImageFolderPath"];
-        profilePic.class = "profilePicture"
+        profilePic.classList.add("profilePicture");
         profileName.innerHTML = profile["Name"];
         profileCar.innerHTML = profile["Car"];
         profileInsta.href = "https://www.instagram.com/" + profile["instagram"];
