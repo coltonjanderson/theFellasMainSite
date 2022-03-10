@@ -47,6 +47,7 @@ function render(profiles)
         let profileInsta = document.createElement("A");
 
         profilePic.src = profile["ImageFolderPath"];
+        profilePic.class = "profilePicture"
         profileName.innerHTML = profile["Name"];
         profileCar.innerHTML = profile["Car"];
         profileInsta.href = "https://www.instagram.com/" + profile["instagram"];
@@ -58,5 +59,6 @@ function render(profiles)
         profileDiv.appendChild(profileInsta);
         profilesContainerDiv.appendChild(profileDiv);
     }
+    //profilesContainerDiv.class = "profilesContainer";
     document.getElementById("body").appendChild(profilesContainerDiv);
 }
