@@ -14,7 +14,7 @@ function init()
 function createProfileObjects(data)
 {
     let headers = [], profiles = [];
-    data = data.split("\r\n");
+    data = data.split("\n");
     headers = data.shift()
     headers = headers.split(",");
     for(let line of data)
