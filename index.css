@@ -1,4 +1,13 @@
-.profilePicture
+#body
 {
+    background-color:ffbc01;
+    font-family: 'itc-machine-std-medium', sans-serif;
+}
+
+.logo-header
+{
+    float:left;
     width:35%;
+    height:15%;
+    padding:10px;
 }
